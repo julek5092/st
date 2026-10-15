@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:size=9:style=Book";
+
+/* static char *font = "DejaVu Sans Mono:size=9:style=Book"; */
+static char *font = "BigBlueTerm437 Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -95,32 +97,32 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used for tens items) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#000000", /* 0: black (falls back to background color) */
-	"#782929", /* 1: red */
-	"#6c8042", /* 2: green */
-	"#a17e4d", /* 3: yellow */
-	"#34535c", /* 4: blue */
-	"#c19ba0", /* 5: magenta */
-	"#c5c6cf", /* 6: cyan */
-	"#cccccc", /* 7: white (falls back to foreground color) */
+        /* 8 normal colors */
+        "#1f1f1f", /* 0: black (falls back to background color) */
+        "#782929", /* 1: red */
+        "#6c8042", /* 2: green */
+        "#a17e4d", /* 3: yellow */
+        "#34535c", /* 4: blue */
+        "#c19ba0", /* 5: magenta */
+        "#c5c6cf", /* 6: cyan */
+        "#cccccc", /* 7: white (falls back to foreground color) */
 
-	/* 8 bright colors */
-	"#424242", /* 8: bright black */
-	"#964141", /* 9: bright red */
-	"#90a662", /* 10: bright green */
-	"#d4a870", /* 11: bright yellow */
-	"#5a7f8a", /* 12: bright blue */
-	"#dec3c7", /* 13: bright magenta */
-	"#e6e7f2", /* 14: bright cyan */
-	"#ffffff", /* 15: bright white */
+        /* 8 bright colors */
+        "#424242", /* 8: bright black */
+        "#964141", /* 9: bright red */
+        "#90a662", /* 10: bright green */
+        "#d4a870", /* 11: bright yellow */
+        "#5a7f8a", /* 12: bright blue */
+        "#dec3c7", /* 13: bright magenta */
+        "#e6e7f2", /* 14: bright cyan */
+        "#ffffff", /* 15: bright white */
 
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+        [255] = 0,
+        /* more colors can be added after 255 to use with DefaultXX */
+        "#cccccc",
+        "#555555",
+        "gray90", /* default foreground colour */
+        "black", /* default background colour */
 };
 
 
@@ -129,7 +131,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
+unsigned int defaultbg = 0;   /* Changed from 259 to 0 to use "#1f1f1f" */
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
