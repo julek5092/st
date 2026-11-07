@@ -101,14 +101,14 @@ float alpha = 0.99;
 /* Terminal colors (16 first used for tens items) */
 static const char *colorname[] = {
         /* 8 normal colors */
-        "#1f1f1f", /* 0: black (falls back to background color) */
+        "#0e100b", /* 0: black (falls back to background color) */
         "#782929", /* 1: red */
         "#6c8042", /* 2: green */
         "#a17e4d", /* 3: yellow */
         "#34535c", /* 4: blue */
         "#c19ba0", /* 5: magenta */
         "#c5c6cf", /* 6: cyan */
-        "#cccccc", /* 7: white (falls back to foreground color) */
+        "#d2d9de", /* 7: white (falls back to foreground color) */
 
         /* 8 bright colors */
         "#424242", /* 8: bright black */
@@ -137,6 +137,7 @@ unsigned int defaultfg = 258;
 unsigned int defaultbg = 0;   /* Changed from 259 to 0 to use "#1f1f1f" */
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
+
 
 /*
  * Default shape of cursor
