@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-static const char *fonts[]          = { "Spleen 12x24:style=Medium:pixelsize=17" };
+static char *font = "Spleen 12x24:style=Medium:pixelsize=17";
 static int borderpx = 2;
 
 /*
