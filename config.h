@@ -6,8 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
- static char *font = "DejaVu Sans Mono:size=9:style=Book"; 
-/* static char *font = "BigBlueTerm437 Nerd Font Mono:pixelsize=14:antialias=true:autohint=true"; */
+static const char *fonts[]          = { "Spleen 12x24:style=Medium:pixelsize=17" };
 static int borderpx = 2;
 
 /*
